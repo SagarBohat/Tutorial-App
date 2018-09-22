@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LifeCycle">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="LifeCycle of Activity"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+            <ImageView
+                android:layout_width="330dp"
+                android:layout_height="330dp"
+                android:src="@drawable/lyf1"/>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Android Activity Lifecycle is controlled by 7 methods of android.app.Activity class. The android Activity is the subclass of ContextThemeWrapper class.
+An activity is the single screen in android. It is like window or frame of Java.
+By the help of activity, you can place all your UI components or widgets in a single screen.
+The 7 lifecycle method of Activity describes how activity will behave at different states.
+Method	Description
+onCreate	called when activity is first created.
+onStart	called when activity is becoming visible to the user.
+onResume	called when activity will start interacting with the user.
+onPause	called when activity is not visible to the user.
+onStop	called when activity is no longer visible to the user.
+onRestart	called after your activity is stopped, prior to start.
+onDestroy	called before the activity is destroyed.
+
+"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        tools:ignore="HardcodedText" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
